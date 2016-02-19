@@ -9,6 +9,8 @@ Doesn't do anything on it's own. This Dockerfile is required to be built as the 
 ####sensu-server
 Installs and configures `Redis`, `RabbitMQ` and `Uchiwa`. No client checks on the server. 
 
+To build this file you must build [sensu-core](#sensu-core) first as it uses it for building.
+
 ####sensu-server-client 
 Installs and configures `Redis`, `RabbitMQ` and `Uchiwa`. Client checks on the server.
 
