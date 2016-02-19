@@ -4,7 +4,9 @@
 These Dockerfiles should work out of the box after building and running the images created.
 
 #### sensu-core
-Doesn't do anything on it's own. This Dockerfile is required to be built as the other Dockerfiles use the image. Build this first before building any of the Dockerfiles below.
+Installs `Sensu core`. Doesn't do anything on it's own. This Dockerfile is required to be built as the other Dockerfiles use the image. Build this first before building any of the Dockerfiles below.
+
+All Dockerfiles come with example configurations and the created images are started with `supervisor`.
 
 ####sensu-server
 Installs and configures `Redis`, `RabbitMQ` and `Uchiwa`. No client checks on the server. 
