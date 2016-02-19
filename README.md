@@ -7,7 +7,7 @@ These Dockerfiles should work out of the box after building and running the imag
 Doesn't do anything on it's own. This Dockerfile is required to be built as the other Dockerfiles use the image. Build this first before building any of the Dockerfiles below.
 
 ####sensu-server
-Installs and configures `Redis, `RabbitMQ` and `Uchiwa`. No client checks on the server. 
+Installs and configures `Redis`, `RabbitMQ` and `Uchiwa`. No client checks on the server. 
 
 ####sensu-server-client 
 Installs and configures `Redis`, `RabbitMQ` and `Uchiwa`. Client checks on the server.
