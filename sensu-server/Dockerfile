@@ -1,6 +1,6 @@
 FROM 	basickarl/sensu-core
 
-MAINTAINER Karl Morrison <basickarl@gmail.com>
+MAINTAINER Karl Morrison <karl@basickarl.io>
 
 # setup rabbitmq config file
 COPY	./files/rabbitmq.config /etc/rabbitmq/rabbitmq.config

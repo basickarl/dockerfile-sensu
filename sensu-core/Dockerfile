@@ -1,6 +1,6 @@
 FROM 	ubuntu:14.04
 
-MAINTAINER Karl Morrison <basickarl@gmail.com>
+MAINTAINER Karl Morrison <karl@basickarl.io>
 
 # install prerequisites
 # install sensu core repositories

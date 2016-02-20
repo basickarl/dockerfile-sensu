@@ -1,12 +1,12 @@
-FROM 	basickarl/sensu-server
+FROM 	basickarl/sensu-core
 
 MAINTAINER Karl Morrison <karl@basickarl.io>
 
 # setup sensu config files
-COPY	./files/client.json /etc/sensu/conf.d/client.json
+COPY	./files/rabbitmq.json /etc/sensu/conf.d/rabbitmq.json
 
 # setup sensu check files
-COPY	./files/check_disk.json /etc/sensu/conf.d/check_disk.json
+COPY	./files/client.json /etc/sensu/conf.d/client.json
 
 # install checks
 # enable sensu client service on boot
@@ -14,7 +14,6 @@ COPY	./files/check_disk.json /etc/sensu/conf.d/check_disk.json
 RUN 	sudo sensu-install -p disk-checks && \
 
 		sudo update-rc.d sensu-client defaults && \
-		sudo /etc/init.d/sensu-client start && \
 
 		sudo apt-get autoremove && \
 		sudo apt-get clean
