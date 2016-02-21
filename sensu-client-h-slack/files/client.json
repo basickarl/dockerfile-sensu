@@ -1,6 +1,6 @@
 {
   "client": {
-    "name": "sensu-client-test",
+    "name": "sensu-client-h-slack-test",
     "address": "x.x.x.x",
     "subscriptions": [],
 	"keepalive": {
@@ -8,7 +8,7 @@
 			"warning": 60,
 			"critical": 300
 		},
-		"handlers": ["default"],
+		"handlers": ["default", "slack"],
 		"refresh": 3600
 	}
   }

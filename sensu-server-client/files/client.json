@@ -1,9 +1,15 @@
 {
   "client": {
     "name": "sensu-server-client-test",
-    "address": "localhost",
-    "subscriptions": [
-      "test"
-    ]
+    "address": "x.x.x.x",
+    "subscriptions": [],
+	"keepalive": {
+		"thresholds": {
+			"warning": 60,
+			"critical": 300
+		},
+		"handlers": ["default"],
+		"refresh": 3600
+	}
   }
 }

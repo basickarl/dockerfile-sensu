@@ -10,9 +10,6 @@ COPY	./files/rabbitmq.json /etc/sensu/conf.d/rabbitmq.json
 COPY	./files/redis.json /etc/sensu/conf.d/redis.json
 COPY	./files/api.json /etc/sensu/conf.d/api.json
 
-# setup sensu handlar files
-COPY	./files/default_handler.json /etc/sensu/conf.d/default_handler.json
-
 # install erlang
 # install rabbitmq
 # enable rabbitmq service on boot

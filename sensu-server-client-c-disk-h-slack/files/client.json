@@ -1,14 +1,16 @@
 {
   "client": {
-    "name": "sensu-client-test",
+    "name": "sensu-server-client-c-disk-h-slack-test",
     "address": "x.x.x.x",
-    "subscriptions": [],
+    "subscriptions": [
+      "disk"
+    ],
 	"keepalive": {
 		"thresholds": {
 			"warning": 60,
 			"critical": 300
 		},
-		"handlers": ["default"],
+		"handlers": ["default", "slack"],
 		"refresh": 3600
 	}
   }

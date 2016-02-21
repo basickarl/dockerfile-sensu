@@ -1,0 +1,15 @@
+{
+	"handlers": {
+		"slack": {
+			"type": "pipe",
+			"command": "handler-slack.rb",
+			"severites": ["ok", "warning", "critical", "unknown"]
+		}
+	},
+	"slack": {
+		"webhook_url": "https://hooks.slack.com/services/...",
+		"username": "sensu",
+		"channel": "#ops",
+		"timeout": 10
+	}
+}
