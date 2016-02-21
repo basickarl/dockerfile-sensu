@@ -1,6 +1,6 @@
 # dockerfile-sensu
 
-#####Ubuntu 14.04 Sensu 0.21 Dockerfiles
+#####Ubuntu 14.04 Sensu Dockerfiles
 These Dockerfiles should work out of the box after building and running the images created.
 
 All Dockerfiles come with example configurations and the created images are started with `supervisor`. 
