@@ -25,7 +25,7 @@ Installs and configures `Redis`, `RabbitMQ` and `Uchiwa`. Client checks on the s
 To build this file you must build [sensu-server](#sensu-server) first as it uses it for building.
 
 ####sensu-server-client-c-disk-h-slack
-Has a `disk-usage` check script and [slack handler plugin](https://github.com/sensu-plugins/sensu-plugins-slack) installed, configured working with each other. Be sure to edit the `handler_config_slack.json` file! Also its `keepalive` is subscribed to the slack handler.
+Has a `disk-usage` check script and [slack handler plugin](https://github.com/sensu-plugins/sensu-plugins-slack) installed, configured and working with each other. Be sure to edit the `handler_config_slack.json` file! Also its `keepalive` is subscribed to the slack handler.
 
 To build this file you must build [sensu-server](#sensu-server) first as it uses it for building.
 
